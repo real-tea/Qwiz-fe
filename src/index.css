@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: CircularStd-Black;
+  src: url("./assets/fonts/CircularStd-Black.otf");
+}
+@font-face {
+  font-family: CircularStd-Bold;
+  src: url("./assets/fonts/CircularStd-Bold.otf");
+}
+@font-face {
+  font-family: CircularStd-Book;
+  src: url("./assets/fonts/CircularStd-Book.otf");
+}
+@font-face {
+  font-family: CircularStd-Light;
+  src: url("./assets/fonts/CircularStd-Light.otf");
+}
+@font-face {
+  font-family: CircularStd-Medium;
+  src: url("./assets/fonts/CircularStd-Medium.otf");
+}
+
+.ag-theme-alpine > * {
+  font-family: "CircularStd-Book", sans-serif;
+}
+
+.ag-header-cell-text {
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+
+.ag-theme-alpine .ag-root-wrapper {
+  border: solid 1px !important;
+  border-color: #eaeaea !important;
+  border-radius: 6px !important;
+}
+
+.ag-theme-alpine .ag-header {
+  border-bottom: none !important;
+}
+
+body {
+  margin: 0;
+  font-family: CircularStd-Book, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #f8f9fa; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.grid-player-options {
+  grid-template-columns: 30px 1fr;
+}
+
+.grid-use-app {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-quizes {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-quiz-modal-descriptions {
+  grid-template-columns: max-content 40px;
+}
+@media screen and (max-width: 999px) {
+  .grid-quiz-modal-descriptions {
+    grid-template-columns: 1fr 40px;
+  }
+}
+
+.grid-responses-options-show {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+@media screen and (max-width: 600px) {
+  .grid-responses-options-show {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px 100px;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid-quizes {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+@media screen and (max-width: 400px) {
+  .grid-quizes {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+/* .landing {
+  background-image: url("./assets/svgs/landing.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 80%;
+} */
+::selection {
+  background: #ffd8a8; /* orange[2] */
+  color: #e8590c;
+}
