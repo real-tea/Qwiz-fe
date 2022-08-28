@@ -5,7 +5,7 @@ export const errorMessages = {
 }
 
 export const globalColors = {
-    brand: '#4f46e5',
+    brand: '#e8590c',
     red: '#e11d48'
 }
 

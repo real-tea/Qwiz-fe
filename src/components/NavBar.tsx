@@ -11,7 +11,7 @@ export const NavBar: React.FC<Props> = () => {
         to="/"
         className="font-semibold text-gray-888 text-xs sm:text-xl flex items-center"
       >
-        <img src={Logo} alt="Quizco Logo" className=" w-10 h-10 object-fit " />
+        <img src={Logo} alt="Quizco Logo" className="rounded-2xl p-2 w-14 h-14 object-fit " />
         <p>Qwiz</p>
       </Link>
       <div className="ml-auto flex items-center">
