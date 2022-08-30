@@ -1,4 +1,4 @@
-import EmptyMail from "../assets/illustations/200_EMPTY_RESPONSE.png";
+import EmptyMail from "../assets/peeps/org-page/peep-org-page.svg";
 import { emptyResponseMessages } from "../shared/constants";
 
 interface Props {
