@@ -44,27 +44,27 @@ export const QuizCard: React.FC<Props> = (props) => {
               : handleQuizModalActive()
           // : navigate(`/quizes/${_id}`)
         }
-        className={`relative shadow-md px-10 py-8 rounded-md bg-white cursor-pointer ${
-          selected ? " border-2 border-teal-500" : ""
+        className={`relative w-15 h-15 shadow-md px-10 py-8 rounded-md bg-[#FDEEDC] cursor-pointer ${
+          selected ? " border-2 border-orange-500" : ""
         }`}
-        style={{ boxShadow: "15px 15px 54px -10px #0000001f" }}
+        style={{ boxShadow: "5px 5px 54px -10px #0000001f" }}
       >
         {isDashboardPage && (
           <p
             className={`${
               status === "active"
-                ? "bg-teal-500"
+                ? "bg-orange-300"
                 : status === "draft"
-                ? "bg-yellow-500"
+                ? "bg-yellow-300"
                 : status === "inactive"
-                ? "bg-rose-600"
+                ? "bg-red-600"
                 : ""
-            } text-white font-normal capitalize absolute rounded-md px-3 py-0.5 right-5 top-5 text-xs`}
+            } text-white font-normal capitalize absolute rounded-md px-5 py-0.5 right-5 top-5 text-xs`}
           >
             {status}
           </p>
         )}
-        <p className="font-semibold whitespace-nowrap overflow-hidden text-ellipsis	break-words mt-2">
+        <p className="font-bold whitespace-nowrap overflow-hidden text-ellipsis	break-words mt-2">
           {title}
         </p>
         <p className="mt-4 break-words">
@@ -73,7 +73,7 @@ export const QuizCard: React.FC<Props> = (props) => {
             : description}
         </p>
         {(score === 0 || score) && (
-          <p className="absolute px-3 py-0.5 bottom-5 right-5 text-xs rounded-md font-medium text-white bg-emerald-500">
+          <p className="absolute px-3 py-0.5 bottom-5 right-5 text-xs rounded-md font-medium text-white bg-[#E38B29]">
             Score : {score}
           </p>
         )}
@@ -87,7 +87,7 @@ export const QuizCard: React.FC<Props> = (props) => {
                 letterSpacing: "0.1px",
                 maxWidth: 100,
               }}
-              className="mr-5 text-xs py-0.5 px-2 bg-slate-300 rounded font-medium text-gray-700 break-words overflow-hidden whitespace-nowrap text-ellipsis"
+              className="mr-5 text-xs py-0.5 px-2 bg-[#FFD8A9] rounded font-medium text-gray-700 break-words overflow-hidden whitespace-nowrap text-ellipsis"
             >
               {tag}
             </p>
