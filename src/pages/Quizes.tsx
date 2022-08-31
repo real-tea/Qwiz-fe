@@ -70,7 +70,7 @@ export const Quizes = () => {
       {isLoading || isFetching ? (
         <Loader halfScreen />
       ) : data?.quizes.length > 0 ? (
-        <div className="grid gap-7 mt-10 grid-flow-col grid-col-3 grid-quizes pb-8">
+        <div className="grid gap-7 mt-10 grid-quizes pb-8">
           {data?.quizes.map((quiz: IQuiz) => (
             <QuizCard key={quiz._id} {...quiz} />
           ))}
