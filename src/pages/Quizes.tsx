@@ -76,7 +76,7 @@ export const Quizes = () => {
           ))}
         </div>
       ) : (
-        <div className="mt-10">
+        <div className="h-12 mt-10">
           <EmptyResponse
             resource={
               searchTerm || tag

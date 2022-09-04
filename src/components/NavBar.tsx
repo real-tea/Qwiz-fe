@@ -17,7 +17,7 @@ export const NavBar: React.FC<Props> = () => {
       <div className="ml-auto flex items-center">
         <SignedOut>
           <Link to="/sign-up" className="mr-4">
-            <p className="cursor-pointer rounded-full px-3 py-2 bg-[#ffd8a8] text-white font-normal">
+            <p className="cursor-pointer rounded-full px-3 py-2 bg-[#ffd8a8] hover:bg-orange-500 text-white font-normal">
               Sign Up
             </p>
           </Link>
