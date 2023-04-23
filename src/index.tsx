@@ -9,6 +9,7 @@ import { ReactQueryDevtools } from "react-query/devtools";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./index.css";
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import { theme } from "./shared/theme";
 
 const queryClient = new QueryClient();
@@ -30,3 +31,5 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
+
+serviceWorkerRegistration.register();
