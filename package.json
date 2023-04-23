@@ -39,7 +39,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start-sw": "http-server ./build"
   },
   "eslintConfig": {
     "extends": [
@@ -60,6 +61,7 @@
     ]
   },
   "devDependencies": {
+    "http-server": "^14.1.1",
     "mini-css-extract-plugin": "2.4.5",
     "react-app-rewired": "^2.2.1"
   },
